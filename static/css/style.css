@@ -103,9 +103,29 @@ body{
 .contacts{display:flex;flex-direction:column;align-items:center;gap:0.6rem;margin-top:0.6rem}
 .social{display:flex;gap:0.6rem}
 
+/* Wishlist Markdown page */
+.wishlist{max-width:760px;margin:0 auto;padding:2rem 2.5rem;color:#d5e0e8;line-height:1.7}
+.markdown-content h1,.markdown-content h2,.markdown-content h3{color:#f2f6f8;line-height:1.25}
+.markdown-content h1{margin:0 0 1rem;font-size:2.4rem;font-weight:400}
+.markdown-content h2{margin:2rem 0 0.7rem;font-size:1.5rem;font-weight:500}
+.markdown-content h3{margin:1.4rem 0 0.5rem;font-size:1.15rem;font-weight:600}
+.markdown-content p{margin:0 0 1rem}
+.markdown-content ul,.markdown-content ol{padding-left:1.5rem}
+.markdown-content li{padding-left:0.25rem;margin:0.35rem 0}
+.markdown-content a{color:var(--accent);text-underline-offset:0.2em}
+.markdown-content blockquote{margin:1.5rem 0;padding:0.2rem 1rem;border-left:3px solid var(--accent);color:var(--muted)}
+.markdown-content code{padding:0.12rem 0.35rem;border-radius:4px;background:rgba(255,255,255,0.08);font-size:0.9em}
+.markdown-content pre{overflow-x:auto;padding:1rem;border-radius:6px;background:rgba(0,0,0,0.25)}
+.markdown-content pre code{padding:0;background:none}
+.markdown-content hr{margin:2rem 0;border:0;border-top:1px solid rgba(255,255,255,0.16)}
+.markdown-content table{width:100%;border-collapse:collapse}
+.markdown-content th,.markdown-content td{padding:0.55rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.16);text-align:left}
+
 @media (max-width:720px){
   .cv-cover-inner{flex-direction:column;align-items:center;text-align:center}
   .timeline-row{grid-template-columns:1fr}
   .time{order:2}
 }
+
+@media (max-width:520px){.wishlist{padding:1rem 1.25rem}.markdown-content h1{font-size:2rem}}
 
