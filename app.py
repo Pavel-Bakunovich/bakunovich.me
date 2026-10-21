@@ -1,14 +1,8 @@
 from flask import Flask, render_template, url_for, make_response
-from markupsafe import Markup
-import markdown
 import io
 #from weasyprint import HTML
 
 app = Flask(__name__)
-
-@app.template_filter('markdown')
-def render_markdown(text):
-    return Markup(markdown.markdown(text, extensions=['fenced_code', 'tables']))
 
 @app.route('/')
 def index():
@@ -25,10 +19,6 @@ def my_story():
 @app.route('/blackboard')
 def blackboard():
     return render_template('blackboard.html')
-
-@app.route('/wishlist')
-def wishlist():
-    return render_template('wishlist.html')
 
 '''
 @app.route('/download-cv')
