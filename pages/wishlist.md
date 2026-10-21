@@ -1,8 +1,3 @@
-{% extends "base.html" %}
-
-{% block content %}
-<article class="wishlist markdown-content">
-  {% filter markdown %}
 # Wishlist - Pavel Bakunovich
 
 1. Маленькая карманная Библия. Как у Андрея Тарасова или у Вени Маковецкого. Чтобы постоянно в сумке с собой и на служения носить. Нигде не могу такую найти.
@@ -12,8 +7,3 @@
 5. [Кофеварка Aeropress](https://ozon.by/product/kofevarka-ruchnaya-aeropress-original-aeropress-dlya-kofe-295-ml-1-2-chashki-387297150/?at=1oeo1PiVJFwOtbLpu9uFN66Fk1ENNNzH&sh=nn--o0qRpQ&hideable_rating=true).
 6. [Кедровые орешки](https://www.wildberries.by/catalog/62570303/detail.aspx).
 7. [Кофе в дрип-пакетах](https://www.wildberries.by/catalog/176548639/detail.aspx).
-
-<!-- Add or edit content here using Markdown. -->
-  {% endfilter %}
-</article>
-{% endblock %}

@@ -1,2 +1,4 @@
 Flask>=2.2
 gunicorn
+Markdown>=3.5,<4
+bleach>=6.1,<7

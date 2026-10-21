@@ -108,3 +108,25 @@ body{
   .timeline-row{grid-template-columns:1fr}
   .time{order:2}
 }
+
+.markdown-content{
+  max-width:860px;
+  margin:0 auto;
+  padding:0 1rem;
+  color:#e6eef6;
+  line-height:1.7;
+  overflow-wrap:anywhere;
+}
+.markdown-content a{color:var(--accent)}
+.markdown-content img{max-width:100%;height:auto}
+.markdown-content pre{
+  overflow-x:auto;
+  padding:1rem;
+  border-radius:8px;
+  background:var(--card);
+}
+.markdown-content table{border-collapse:collapse}
+.markdown-content th,.markdown-content td{
+  padding:0.45rem 0.7rem;
+  border:1px solid rgba(230,238,246,0.2);
+}
