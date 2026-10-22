@@ -7,3 +7,4 @@
 5. [Кофеварка Aeropress](https://ozon.by/product/kofevarka-ruchnaya-aeropress-original-aeropress-dlya-kofe-295-ml-1-2-chashki-387297150/?at=1oeo1PiVJFwOtbLpu9uFN66Fk1ENNNzH&sh=nn--o0qRpQ&hideable_rating=true).
 6. [Кедровые орешки](https://www.wildberries.by/catalog/62570303/detail.aspx).
 7. [Кофе в дрип-пакетах](https://www.wildberries.by/catalog/176548639/detail.aspx).
+8. [Тележка для кемпинга](https://ozon.by/product/telezhka-dlya-kempinga-mnogofunktsionalnaya-legkaya-i-prostaya-v-ispolzovanii-skladnaya-3691896245/?at=1iyp1S2x5L6LRcJr55Sp7rG8XJfejE1n&is_apparel_size_selected=true).
