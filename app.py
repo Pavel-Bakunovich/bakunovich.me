@@ -1,11 +1,14 @@
+import logging
 from pathlib import Path
 
 import bleach
 import markdown
-from flask import Flask, abort, render_template
+from flask import Flask, abort, render_template, request
 #from weasyprint import HTML
 
 app = Flask(__name__)
+app.logger.setLevel(logging.INFO)
+logging.getLogger("werkzeug").setLevel(logging.WARNING)
 MARKDOWN_PAGES_DIR = Path(__file__).resolve().parent / "pages"
 MARKDOWN_TAGS = bleach.sanitizer.ALLOWED_TAGS.union({
     "blockquote", "br", "code", "del", "dd", "dl", "dt", "h1", "h2", "h3",
@@ -22,7 +25,13 @@ MARKDOWN_ATTRIBUTES = {
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    page = render_template('index.html')
+    app.logger.info(
+        "Homepage opened from %s using %s",
+        request.remote_addr,
+        request.user_agent.string,
+    )
+    return page
 
 @app.route('/cv')
 def cv():
