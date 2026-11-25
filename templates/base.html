@@ -18,6 +18,8 @@
     {% block content %}{% endblock %}
   </main>
 
+{% if request.host.split(':', 1)[0] in ['bakunovich.me', 'www.bakunovich.me'] %}
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2075952b8a5e44b1bfc3eceb85b1dc89"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
+{% endif %}
 </html>
